@@ -19,6 +19,5 @@ while True:
 
     screen.blit(test_surface,(10,10))
 
-
     pygame.display.update()
     clock.tick(30)
