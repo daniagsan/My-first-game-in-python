@@ -7,9 +7,10 @@ pygame.init()
 screen = pygame.display.set_mode((800,400))
 pygame.display.set_caption('First Videogame')
 clock = pygame.time.Clock()
+test_font =  pygame.font.Font(None, 50)
 
-test_surface = pygame.Surface((100,200))
-test_surface.fill('Red')
+sky_surface = pygame.image.load("Resources\graphics\Sky.png").convert()
+ground_surface = pygame.image.load("Resources\graphics\ground.png").convert()
 
 while True:
     for event in pygame.event.get():
@@ -17,7 +18,8 @@ while True:
             pygame.quit()
             exit()
 
-    screen.blit(test_surface,(10,10))
+    screen.blit(sky_surface,(0,0))
+    screen.blit(ground_surface,(0,300))
 
     pygame.display.update()
     clock.tick(30)
