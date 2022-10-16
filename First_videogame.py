@@ -1,6 +1,6 @@
 from cgi import test
-import pygame
 from sys import exit
+import pygame
 
 pygame.init()
 
@@ -31,8 +31,8 @@ while True:
     #player_rect.right -= 1
     screen.blit(player_surf,player_rect)
 
-    snail_rect.left -= 4
-    if snail_rect.left < -50: 
+    snail_rect.left -= 100
+    if snail_rect.left < -70: 
         snail_rect.left = 850
 
     screen.blit(snail_surface,snail_rect)
