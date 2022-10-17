@@ -31,9 +31,9 @@ while True:
     #player_rect.right -= 1
     screen.blit(player_surf,player_rect)
 
-    snail_rect.left -= 100
-    if snail_rect.left < -70: 
-        snail_rect.left = 850
+    snail_rect.x -= 10
+    if snail_rect.right < 0: 
+        snail_rect.left = 800
 
     screen.blit(snail_surface,snail_rect)
 
