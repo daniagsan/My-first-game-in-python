@@ -1,4 +1,3 @@
 #Match Tile Game here
 
-q onaadadasdsad
-
+TMP_RESOURCES\cerezas.png
